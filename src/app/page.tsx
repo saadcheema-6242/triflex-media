@@ -2,6 +2,7 @@ export default function Home() {
   return (
     <main style={styles.main}>
       <div style={styles.content}>
+        <h2 style={styles.companyName}>TRIFLEX MEDIA</h2>
         <h1 style={styles.title}>SOMETHING BIG IS COMING SOON</h1>
       </div>
       <footer style={styles.footer}>
@@ -24,6 +25,16 @@ const styles: { [key: string]: React.CSSProperties } = {
   content: {
     margin: "auto 0",
     textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    gap: "1.25rem",
+  },
+  companyName: {
+    color: "#0066ff",
+    fontSize: "clamp(1.2rem, 3vw, 2.2rem)",
+    fontWeight: 700,
+    letterSpacing: "4px",
+    textTransform: "uppercase",
   },
   title: {
     color: "#0066ff",
